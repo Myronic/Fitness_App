@@ -1,0 +1,90 @@
+@keyframes example {
+        0%   {color:green;}
+	25%   {color:limegreen;}		
+        50%   {color:lime;}
+	75%   {color:limegreen;}
+        100%   {color:white;}
+    
+}
+
+@keyframes marquee {
+                0%   {background-color:white; color: black;}
+                10%   {background-color:#607D8B; color:black; }
+                015%   {background-color:#00BCD4;}
+                020%   {background-color:#03A9F4;}
+                025%   {background-color:#009688;}
+                030%   {background-color:#4CAF50;}
+                035%   {background-color:#8BC34A;}
+                040%   {background-color:#CDDC39;}
+                045%   {background-color:#FFFF00;}
+                050%   {background-color:#FF9800;}
+                055%   {background-color:#FF5722;}
+                060%   {background-color:#F44336;}
+                065%   {background-color:#FF5722;}
+                070%   {background-color:#FF9800;}
+                075%   {background-color:#FFFF00;}
+                080%   {background-color:#CDDC39;}
+                085%   {background-color:#8BC34A;}
+                090%   {background-color:#4CAF50;}
+                092%   {background-color:#009688;}
+                094%   {background-color:#03A9F4;}
+                096%   {background-color:#00BCD4;}
+                098%   {background-color:#607D8B;}
+                100%   {background-color:white;}
+            }
+
+
+.navbar{
+            background-color: #212121;
+            font-family: 'Asul', sans-serif;
+            color: white;
+            text-decoration: none;
+            text-decoration-color: white;
+            text-decoration-line: none;
+            background-attachment: fixed;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+
+.navbuttons{
+            border: 2px;
+            margin:0px 10px 0px 10px;
+            padding: 0px 10px;
+            border-color: #FAFAFA;
+            background-color: inherit;
+            word-wrap: break-word;
+        }
+.navbar h1{
+            animation-name: example;
+            animation-iteration-count: infinite;
+            animation-duration: 35s;
+}
+        
+.navbar a {
+            color: white;
+            text-decoration: none;
+        }
+.navbar a:hover{
+            color:#76FF03;
+            font-size: 20px;
+}
+
+.navbar h1:hover{
+            color:#03A9F4;
+            font-size: 20px;
+}
+
+body{
+            background-attachment: fixed;
+            margin: 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+marquee{ 
+    font-family: cursive; 
+}
+marquee a{
+    text-decoration: none;
+    color: white;
+}

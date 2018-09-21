@@ -1,0 +1,894 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>sfhome</title>
+           <link href="https://fonts.googleapis.com/css?family=Asul" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+        <link href="basic.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+            #bgimg 
+            {
+                background: url(images/pl.jpg);
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-attachment: fixed;
+            }
+            
+            h1
+            {
+                color:lime; font-family:sans-serif; text-align: center;
+                border-spacing: 0;
+            }
+            
+              
+            h3
+            {
+                color:lime; font-family:sans-serif; text-align: center;
+                border-spacing: 0;
+            }
+            
+            body {margin:0;}
+
+            
+            li 
+            {
+                float: left;
+            }
+
+          li a, .dropbtn 
+            {
+                display: inline-block;
+                color:aliceblue;
+                text-align: center;
+                padding: 6px 20px;
+                text-decoration: none;
+                padding-top: 0px;
+                border-spacing: 2px;
+            }
+            
+          li a:hover:not(active), .dropdown:hover .dropbtn 
+            {
+                background-color: #999;
+                border-radius: 5px;
+                opacity: .95;
+            }
+
+    
+
+            li.dropdown
+            {
+                display: inline-block;
+            }
+
+            .dropdown-content 
+            {
+                display: none;
+                position: absolute;
+                background-color: whitesmoke;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1; 
+                border-radius: 5px;
+                opacity: .8;
+            }
+
+            .dropdown-content a 
+            {
+                color: black;
+                padding: 8px 16px; 
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+            .dropdown-content a:hover 
+            {background-color:#999;opacity: .99;}
+            {background-color:#999;}
+
+            .dropdown:hover .dropdown-content   
+            {
+                display: block;
+            }
+            
+            .active
+            {
+                background-color:limegreen;
+                border-radius: 5px;
+            }
+            
+             .active2
+            {
+                background-color:#999;
+                 border-radius: 5px;
+            }
+            div.ex1
+            {
+                width:500px;
+                margin: auto;
+            }
+            
+           #header
+            {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            
+            .images
+            {
+                display: inline;
+                margin: 35px;
+                padding: 10px;
+                width: 350px;
+                height: 280px;
+                opacity: .95;
+                transition: .5s ease;
+                backface-visibility: hidden;
+                 float:left;
+                border-radius: 7%;
+            }
+            
+            .t1:hover .images 
+            {
+                opacity: 0.5;
+            }
+
+            .content    
+            {
+                display: block;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+                top: 0px;  
+                height: 100%;
+                max-width: 100%;
+                overflow-y: hidden;
+                overflow-x:auto;
+            }
+            
+            .foot
+            {
+                display: flex;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%;-50%);
+            }
+			#li1
+			{
+			  padding-left:80px;
+			  height:40px;
+			  padding-top:0px;
+			  margin-left:20px;
+              width:80px;
+			  height:80px;
+			}
+			#li11
+			{
+			    padding-left:50px;
+			  height:40px;
+			  padding-top:50px;
+			  margin-left:235px;
+			  width:80px;
+			  height:80px;
+			
+			
+			}
+            
+            #li1:a
+            {
+                width: 40px;
+                height: 60px;
+                background-color:lime;
+                text-align: center;
+                line-height: 40px;
+                font-size: 20px;
+                margin: 0 10px;
+                align-items: center;
+				color:red;
+            }
+			
+			#feet
+            {
+                list-style-type: none;
+                padding: 5px;
+                overflow: hidden;
+                background-color:limegreen;
+                height:40px;
+				padding-top:20px;
+                top: 0;
+                width: 100%;
+			  
+            }
+
+            #head
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 5px;
+                overflow: hidden;
+                background-color:black ;
+                top: 0;
+                width: 100%;
+				height:40px;
+				padding-top:20px;
+            }
+			#head:hover
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 5px;
+				padding-top:20px;
+                overflow: hidden;
+                background-color:black;
+                top: 0;
+                width: 100%;
+				
+            }
+			
+            .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius:10px;
+        padding-left: auto;
+                padding-top: auto;
+}
+
+               h3
+            {
+                 color:white; font-family:sans-serif; text-align: center;
+                border-spacing: 10px;
+            }
+            
+             h1
+            {
+                color:lime; font-family:sans-serif; text-align: center;
+                border-spacing: 0;
+            }
+            
+            
+            
+.button1 {
+    background-color: limegreen;
+    color: white;
+    border: 2px solid #4CAF50;
+    margin-left: 330px;
+    margin-top: 10px;
+}
+
+.button1:hover {
+   
+     background-color: white; 
+    color: limegreen; 
+}
+
+
+         </style>
+    </head>
+   
+    
+    
+    <body id="bgimg">
+        
+        <div id="header">
+            <ul id="head">
+                <li class="dropdown"><a  href="homepage.html">Home</a>
+                     <div class="dropdown-content">
+                            <a href="homepage.html">Home Page</a>
+                            <a href="about.html">About us</a>
+                        </div>
+                </li>
+                
+                <li class="dropdown">
+                <a href="workout.html" >Workouts</a>
+                     <div class="dropdown-content">
+                            <a href="workout.html">Gym workouts</a>
+                            <a href="workout.html">Home workouts</a>
+                        </div>
+                </li>
+                
+               <li class="dropdown">
+                <a href="plans.html" class="dropbtn">Plans</a>
+                        <div class="dropdown-content">
+                            <a href="plans.html">Fat loss</a>
+                            <a href="plans.html">Mass gain</a>
+                            <a href="plans.html">Lean & Fit</a>
+                        </div>
+                </li>
+                
+               <li class="dropdown">
+                <a href="nutrition.html" class="dropbtn">Nutrition</a>
+                        <div class="dropdown-content">
+                            <a href="nutrition.html">Caloric surplus</a>
+                            <a href="nutrition.html">Caloric deficit</a>
+                            <a href="nutrition.html">Caloric Balanced</a>
+                        </div>
+                </li>
+               
+              <li class="dropdown">
+                <a href="challanges.html" class="dropbtn">Challanges</a>
+                        <div class="dropdown-content">
+                            <a href="challanges.html">Beginners mode</a>
+                            <a href="challanges.html">Intermediate mode</a>
+                            <a href="challanges.html">Advanced mode</a>
+                             <a href="challanges.html">SuperSane mode</a>    
+                        </div>
+                </li>
+                
+                
+                <li class="dropdown">
+                <a href="login.html" class="dropbtn">Login</a>
+                    <div class="dropdown-content">
+                            <a href="login.html">I'm back</a>
+                            <a href="signin.html">Forgot my password</a>
+                        </div>
+                </li>
+                
+                 <li class="dropdown">
+                <a href="javascript:void(0)" class="active">Signin</a>
+                        
+                </li>
+                </li>
+                <li style="float:right"><a class="active2" href="about.html">Help/Contact</a></li>
+            </ul>
+        </div>
+    
+    <br><hr>
+     <div class="signup">
+        <form class="formsu" align="center">
+            
+            <table align="center">
+                <tr class="tablehead"><td colspan="2" align="center"><h1 style="color: white">SIGN IN</h1></td></tr>
+                <tr>
+                    <td align="right"><p style="color: white">First Name</p></td>
+                    <td><input class="non-gender" type="text" required placeholder="e.x. John" autocomplete="on" id="personFName" autofocus></td>
+                </tr>
+                <tr>
+                    <td align="right"><p style="color: white">Last Name</p></td>
+                    <td><input class="non-gender" type="text" required placeholder="e.x. Doe" autocomplete="on" id="personLName"></td>
+                </tr>
+                <tr>
+                    <td align="right"><p style="color: white">Date of Birth</p></td>
+                    <td><input class="non-gender" type="date" required placeholder="dd-mm-yyyy" autocomplete="on" id="personDOB" min="1960-12-31" max="2007-01-31" required></td>
+                </tr>
+                <tr>
+                    <td align="right"><p style="color: white">Gender</p></td>
+                    <td align="center">
+                        <select required>
+  <option value="volvo">Male</option>
+  <option value="saab">Female</option>
+  <option value="mercedes">Other</option>
+</select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><p style="color: white">Email</p></td>
+                    <td><input class="non-gender" type="email" required placeholder="e.x. someone@domain.com" autocomplete="on" id="personEmail"></td>
+                </tr>
+                <tr>
+                    <td align="right"><p style="color: white">Country</p></td>
+                    <td>
+                        <input class="non-gender" list="countries" name="country" placeholder="Select your Country" required id="country">
+                        <datalist name="data list" id="countries">
+                            <option value="AFG">Afghanistan</option>
+                            <option value="ALA">Åland Islands</option>
+                            <option value="ALB">Albania</option>
+                            <option value="DZA">Algeria</option>
+                            <option value="ASM">American Samoa</option>
+                            <option value="AND">Andorra</option>
+                            <option value="AGO">Angola</option>
+                            <option value="AIA">Anguilla</option>
+                            <option value="ATA">Antarctica</option>
+                            <option value="ATG">Antigua and Barbuda</option>
+                            <option value="ARG">Argentina</option>
+                            <option value="ARM">Armenia</option>
+                            <option value="ABW">Aruba</option>
+                            <option value="AUS">Australia</option>
+                            <option value="AUT">Austria</option>
+                            <option value="AZE">Azerbaijan</option>
+                            <option value="BHS">Bahamas</option>
+                            <option value="BHR">Bahrain</option>
+                            <option value="BGD">Bangladesh</option>
+                            <option value="BRB">Barbados</option>
+                            <option value="BLR">Belarus</option>
+                            <option value="BEL">Belgium</option>
+                            <option value="BLZ">Belize</option>
+                            <option value="BEN">Benin</option>
+                            <option value="BMU">Bermuda</option>
+                            <option value="BTN">Bhutan</option>
+                            <option value="BOL">Bolivia, Plurinational State of</option>
+                            <option value="BES">Bonaire, Sint Eustatius and Saba</option>
+                            <option value="BIH">Bosnia and Herzegovina</option>
+                            <option value="BWA">Botswana</option>
+                            <option value="BVT">Bouvet Island</option>
+                            <option value="BRA">Brazil</option>
+                            <option value="IOT">British Indian Ocean Territory</option>
+                            <option value="BRN">Brunei Darussalam</option>
+                            <option value="BGR">Bulgaria</option>
+                            <option value="BFA">Burkina Faso</option>
+                            <option value="BDI">Burundi</option>
+                            <option value="KHM">Cambodia</option>
+                            <option value="CMR">Cameroon</option>
+                            <option value="CAN">Canada</option>
+                            <option value="CPV">Cape Verde</option>
+                            <option value="CYM">Cayman Islands</option>
+                            <option value="CAF">Central African Republic</option>
+                            <option value="TCD">Chad</option>
+                            <option value="CHL">Chile</option>
+                            <option value="CHN">China</option>
+                            <option value="CXR">Christmas Island</option>
+                            <option value="CCK">Cocos (Keeling) Islands</option>
+                            <option value="COL">Colombia</option>
+                            <option value="COM">Comoros</option>
+                            <option value="COG">Congo</option>
+                            <option value="COD">Congo, the Democratic Republic of the</option>
+                            <option value="COK">Cook Islands</option>
+                            <option value="CRI">Costa Rica</option>
+                            <option value="CIV">Côte d'Ivoire</option>
+                            <option value="HRV">Croatia</option>
+                            <option value="CUB">Cuba</option>
+                            <option value="CUW">Curaçao</option>
+                            <option value="CYP">Cyprus</option>
+                            <option value="CZE">Czech Republic</option>
+                            <option value="DNK">Denmark</option>
+                            <option value="DJI">Djibouti</option>
+                            <option value="DMA">Dominica</option>
+                            <option value="DOM">Dominican Republic</option>
+                            <option value="ECU">Ecuador</option>
+                            <option value="EGY">Egypt</option>
+                            <option value="SLV">El Salvador</option>
+                            <option value="GNQ">Equatorial Guinea</option>
+                            <option value="ERI">Eritrea</option>
+                            <option value="EST">Estonia</option>
+                            <option value="ETH">Ethiopia</option>
+                            <option value="FLK">Falkland Islands (Malvinas)</option>
+                            <option value="FRO">Faroe Islands</option>
+                            <option value="FJI">Fiji</option>
+                            <option value="FIN">Finland</option>
+                            <option value="FRA">France</option>
+                            <option value="GUF">French Guiana</option>
+                            <option value="PYF">French Polynesia</option>
+                            <option value="ATF">French Southern Territories</option>
+                            <option value="GAB">Gabon</option>
+                            <option value="GMB">Gambia</option>
+                            <option value="GEO">Georgia</option>
+                            <option value="DEU">Germany</option>
+                            <option value="GHA">Ghana</option>
+                            <option value="GIB">Gibraltar</option>
+                            <option value="GRC">Greece</option>
+                            <option value="GRL">Greenland</option>
+                            <option value="GRD">Grenada</option>
+                            <option value="GLP">Guadeloupe</option>
+                            <option value="GUM">Guam</option>
+                            <option value="GTM">Guatemala</option>
+                            <option value="GGY">Guernsey</option>
+                            <option value="GIN">Guinea</option>
+                            <option value="GNB">Guinea-Bissau</option>
+                            <option value="GUY">Guyana</option>
+                            <option value="HTI">Haiti</option>
+                            <option value="HMD">Heard Island and McDonald Islands</option>
+                            <option value="VAT">Holy See (Vatican City State)</option>
+                            <option value="HND">Honduras</option>
+                            <option value="HKG">Hong Kong</option>
+                            <option value="HUN">Hungary</option>
+                            <option value="ISL">Iceland</option>
+                            <option value="IND">India</option>
+                            <option value="IDN">Indonesia</option>
+                            <option value="IRN">Iran, Islamic Republic of</option>
+                            <option value="IRQ">Iraq</option>
+                            <option value="IRL">Ireland</option>
+                            <option value="IMN">Isle of Man</option>
+                            <option value="ISR">Israel</option>
+                            <option value="ITA">Italy</option>
+                            <option value="JAM">Jamaica</option>
+                            <option value="JPN">Japan</option>
+                            <option value="JEY">Jersey</option>
+                            <option value="JOR">Jordan</option>
+                            <option value="KAZ">Kazakhstan</option>
+                            <option value="KEN">Kenya</option>
+                            <option value="KIR">Kiribati</option>
+                            <option value="PRK">Korea, Democratic People's Republic of</option>
+                            <option value="KOR">Korea, Republic of</option>
+                            <option value="KWT">Kuwait</option>
+                            <option value="KGZ">Kyrgyzstan</option>
+                            <option value="LAO">Lao People's Democratic Republic</option>
+                            <option value="LVA">Latvia</option>
+                            <option value="LBN">Lebanon</option>
+                            <option value="LSO">Lesotho</option>
+                            <option value="LBR">Liberia</option>
+                            <option value="LBY">Libya</option>
+                            <option value="LIE">Liechtenstein</option>
+                            <option value="LTU">Lithuania</option>
+                            <option value="LUX">Luxembourg</option>
+                            <option value="MAC">Macao</option>
+                            <option value="MKD">Macedonia, the former Yugoslav Republic of</option>
+                            <option value="MDG">Madagascar</option>
+                            <option value="MWI">Malawi</option>
+                            <option value="MYS">Malaysia</option>
+                            <option value="MDV">Maldives</option>
+                            <option value="MLI">Mali</option>
+                            <option value="MLT">Malta</option>
+                            <option value="MHL">Marshall Islands</option>
+                            <option value="MTQ">Martinique</option>
+                            <option value="MRT">Mauritania</option>
+                            <option value="MUS">Mauritius</option>
+                            <option value="MYT">Mayotte</option>
+                            <option value="MEX">Mexico</option>
+                            <option value="FSM">Micronesia, Federated States of</option>
+                            <option value="MDA">Moldova, Republic of</option>
+                            <option value="MCO">Monaco</option>
+                            <option value="MNG">Mongolia</option>
+                            <option value="MNE">Montenegro</option>
+                            <option value="MSR">Montserrat</option>
+                            <option value="MAR">Morocco</option>
+                            <option value="MOZ">Mozambique</option>
+                            <option value="MMR">Myanmar</option>
+                            <option value="NAM">Namibia</option>
+                            <option value="NRU">Nauru</option>
+                            <option value="NPL">Nepal</option>
+                            <option value="NLD">Netherlands</option>
+                            <option value="NCL">New Caledonia</option>
+                            <option value="NZL">New Zealand</option>
+                            <option value="NIC">Nicaragua</option>
+                            <option value="NER">Niger</option>
+                            <option value="NGA">Nigeria</option>
+                            <option value="NIU">Niue</option>
+                            <option value="NFK">Norfolk Island</option>
+                            <option value="MNP">Northern Mariana Islands</option>
+                            <option value="NOR">Norway</option>
+                            <option value="OMN">Oman</option>
+                            <option value="PAK">Pakistan</option>
+                            <option value="PLW">Palau</option>
+                            <option value="PSE">Palestinian Territory, Occupied</option>
+                            <option value="PAN">Panama</option>
+                            <option value="PNG">Papua New Guinea</option>
+                            <option value="PRY">Paraguay</option>
+                            <option value="PER">Peru</option>
+                            <option value="PHL">Philippines</option>
+                            <option value="PCN">Pitcairn</option>
+                            <option value="POL">Poland</option>
+                            <option value="PRT">Portugal</option>
+                            <option value="PRI">Puerto Rico</option>
+                            <option value="QAT">Qatar</option>
+                            <option value="REU">Réunion</option>
+                            <option value="ROU">Romania</option>
+                            <option value="RUS">Russian Federation</option>
+                            <option value="RWA">Rwanda</option>
+                            <option value="BLM">Saint Barthélemy</option>
+                            <option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>
+                            <option value="KNA">Saint Kitts and Nevis</option>
+                            <option value="LCA">Saint Lucia</option>
+                            <option value="MAF">Saint Martin (French part)</option>
+                            <option value="SPM">Saint Pierre and Miquelon</option>
+                            <option value="VCT">Saint Vincent and the Grenadines</option>
+                            <option value="WSM">Samoa</option>
+                            <option value="SMR">San Marino</option>
+                            <option value="STP">Sao Tome and Principe</option>
+                            <option value="SAU">Saudi Arabia</option>
+                            <option value="SEN">Senegal</option>
+                            <option value="SRB">Serbia</option>
+                            <option value="SYC">Seychelles</option>
+                            <option value="SLE">Sierra Leone</option>
+                            <option value="SGP">Singapore</option>
+                            <option value="SXM">Sint Maarten (Dutch part)</option>
+                            <option value="SVK">Slovakia</option>
+                            <option value="SVN">Slovenia</option>
+                            <option value="SLB">Solomon Islands</option>
+                            <option value="SOM">Somalia</option>
+                            <option value="ZAF">South Africa</option>
+                            <option value="SGS">South Georgia and the South Sandwich Islands</option>
+                            <option value="SSD">South Sudan</option>
+                            <option value="ESP">Spain</option>
+                            <option value="LKA">Sri Lanka</option>
+                            <option value="SDN">Sudan</option>
+                            <option value="SUR">Suriname</option>
+                            <option value="SJM">Svalbard and Jan Mayen</option>
+                            <option value="SWZ">Swaziland</option>
+                            <option value="SWE">Sweden</option>
+                            <option value="CHE">Switzerland</option>
+                            <option value="SYR">Syrian Arab Republic</option>
+                            <option value="TWN">Taiwan, Province of China</option>
+                            <option value="TJK">Tajikistan</option>
+                            <option value="TZA">Tanzania, United Republic of</option>
+                            <option value="THA">Thailand</option>
+                            <option value="TLS">Timor-Leste</option>
+                            <option value="TGO">Togo</option>
+                            <option value="TKL">Tokelau</option>
+                            <option value="TON">Tonga</option>
+                            <option value="TTO">Trinidad and Tobago</option>
+                            <option value="TUN">Tunisia</option>
+                            <option value="TUR">Turkey</option>
+                            <option value="TKM">Turkmenistan</option>
+                            <option value="TCA">Turks and Caicos Islands</option>
+                            <option value="TUV">Tuvalu</option>
+                            <option value="UGA">Uganda</option>
+                            <option value="UKR">Ukraine</option>
+                            <option value="ARE">United Arab Emirates</option>
+                            <option value="GBR">United Kingdom</option>
+                            <option value="USA">United States</option>
+                            <option value="UMI">United States Minor Outlying Islands</option>
+                            <option value="URY">Uruguay</option>
+                            <option value="UZB">Uzbekistan</option>
+                            <option value="VUT">Vanuatu</option>
+                            <option value="VEN">Venezuela, Bolivarian Republic of</option>
+                            <option value="VNM">Viet Nam</option>
+                            <option value="VGB">Virgin Islands, British</option>
+                            <option value="VIR">Virgin Islands, U.S.</option>
+                            <option value="WLF">Wallis and Futuna</option>
+                            <option value="ESH">Western Sahara</option>
+                            <option value="YEM">Yemen</option>
+                            <option value="ZMB">Zambia</option>
+                            <option value="ZWE">Zimbabwe</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><p style="color: white">Username</p></td>
+                    <td>
+                        <div class="tooltip">
+                            <input class="non-gender" type="text" required id="username" size="120"><br>
+                            <span class="tooltiptext">
+                               <p style="font-size: 12px; color: white "> **Username must start &amp; end with an alphabet only<br>
+                                It can have numbers and special charecters like '.' and '_'<br>
+                                   It must be minimum 6 characters long**</p>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><p style="color: white">Password</p></td>
+                    <td><input class="non-gender" type="password" required id="password"></td>
+                </tr>
+                <tr>
+                    <td align="right"><p style="color: white">Confirm Password</p></td>
+                    <td><input class="non-gender" type="password" required id="cpassword"></td>
+                </tr>
+                <tr class="info">
+                    <td colspan="2" align="center" id="validationDetails">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <a href="login.html"><p style="color: white">Already a member ? Click here</p></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input class="non-gender" type="submit" id="s">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+        
+        <script>
+            var uflag = "notset";
+            var pflag = "notset";
+            var eflag = "notset";
+            localStorage.setItem("gender","male");
+            var det= document.getElementById("validationDetails");
+            document.getElementById("s").style.visibility="hidden";
+            
+            var fname,lname,email,dob;
+            
+            document.getElementById("personFName").addEventListener("change",function(){
+                fname = this.value;
+            });
+            
+            document.getElementById("personLName").addEventListener("change",function(){
+                lname = this.value;
+            });
+            
+            document.getElementById("personDOB").addEventListener("change",function(){
+                dob = this.value;
+            });
+            
+            document.getElementById("personEmail").addEventListener("change",function(){
+                email = this.value;
+            });
+            
+            //email verification
+            var email = document.getElementById("personEmail");
+            email.addEventListener("change",function(){
+                var regex = /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\])?/i;
+                console.log(this.value);
+                if(regex.test(this.value)==false){
+                    alert("Enter a valid Email Address");
+                    eflag = "notset";
+                }
+                else if(regex.test(this.value)==true){
+                    eflag = "set";
+                }
+                if(uflag == "set" && pflag == "set" && eflag == "set"){
+                    //display submit button
+                    document.getElementById("s").style.visibility="visible";
+                }
+                else{
+                    document.getElementById("s").style.visibility="hidden";
+                }
+            });
+            
+            //username verification
+            var username = document.getElementById("username");
+            username.addEventListener("input",function(){
+                var regex = /(([a-z])+(([0-9])?(_)?(\.)?)*){6,}/i;
+            });
+            
+            
+            username.addEventListener("change",function(){
+                var regex = /(([a-z])+(([0-9])?(_)?(\.)?)*){6,}/i;
+                if(regex.test(username.value)==false){
+                    alert("Please follow instructions for entering username");
+                    uflag = "notset"
+                }
+                else if(regex.test(username.value)==true){
+                    uflag = "set";
+                }
+                if(uflag == "set" && pflag == "set" && eflag == "set"){
+                    //display submit button
+                    document.getElementById("s").style.visibility="visible";
+                }
+                else{
+                    document.getElementById("s").style.visibility="hidden";
+                }
+            });
+            
+            //password verification
+            var cpass=document.getElementById("cpassword");
+            cpass.addEventListener("input",passwordMatch);
+            function passwordMatch(){
+                var pass=document.getElementById("password").value;
+                if(cpass.value != pass && cpass.value!="" && pass!=""){
+                    det.style.visibility="visible";
+                    det.style.color="red";
+                    det.innerHTML="Passwords Don't match";
+                    pflag = "notset";
+                }
+                else if(cpass.value == pass && pass!=""){
+                    det.style.visibility="visible";
+                    det.style.color="limegreen";
+                    det.innerHTML="Passwords match";
+                    pflag = "set";
+                }
+                else if(pass="" && cpass.value==""){
+                    det.style.visibility = "hidden"
+                }
+                if(uflag == "set" && pflag == "set" && eflag == "set"){
+                    //display submit button
+                    document.getElementById("s").style.visibility="visible";
+                }
+                else{
+                    document.getElementById("s").style.visibility="hidden";
+                }
+            }
+            var submitBtn = document.getElementById("s");
+            submitBtn.addEventListener("click",function(){
+                     //web storage
+                if (typeof(Storage) !== "undefined") {
+                    // Store
+                    localStorage.setItem("fname",fname);
+                    localStorage.setItem("lname",lname);
+                    localStorage.setItem("dob",dob);
+                    localStorage.setItem("email",email);
+                    localStorage.setItem("username",username.value);
+                    localStorage.setItem("password",cpass.value);
+                    // Retrieve
+                    alert("Form Submitted successfully");
+                } 
+                else {
+                    alert("Sorry, your browser does not support Web Storage...");
+                }
+            });
+            
+            var maleBtn = document.getElementById("male");
+            maleBtn.addEventListener("click",function(){
+                console.log(this.value);
+                if(this.value == "on"){
+                    localStorage.setItem("gender","male");
+                }
+            });
+            
+            var femaleBtn = document.getElementById("female");
+            femaleBtn.addEventListener("click",function(){
+                console.log(this.value);
+                if(this.value == "on"){
+                    localStorage.setItem("gender","female");
+                }
+            });
+            
+            var otherBtn = document.getElementById("other");
+            otherBtn.addEventListener("click",function(){
+                console.log(this.value);
+                if(this.value == "on"){
+                    localStorage.setItem("gender","other");
+                }
+            });
+        </script>
+        <script src="basic.js"></script>
+            
+        <div id="footer">
+            <ul id="feet">
+                 <li id="li1"><a href="https://github.com/Myronic"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li id="li1"><a href="https://www.linkedin.com/in/myron-carvalho-5484ba148"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li id="li1"><a href="myron.c@somaiya.edu"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                <li id="li1"><a href="https://www.instagram.com/myronic/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li id="li1"><a href="https://www.facebook.com/public/Myron-Carvalho"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li id="li1"><a href="https://plus.google.com/111164765000672897616"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>           
+                <li id="li1"><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>                            
+            </ul>
+        </div>
+        
+    </body>
+</html>
